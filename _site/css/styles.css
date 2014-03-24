@@ -1,0 +1,16 @@
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+}
+
+.recent-posts {
+  text-align: center;
+}
+.recent-posts ul {
+  padding: 0;
+  list-style: none;
+}

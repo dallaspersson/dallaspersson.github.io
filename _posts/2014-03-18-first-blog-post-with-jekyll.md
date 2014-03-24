@@ -1,21 +1,25 @@
 ---
+layout: default
 title: First Blog Post with Jekyll
 tags: [jekyll, web, github]
 ---
 
-{{ page.title }}
-====================
+{% include post_header.html title=page.title %}
 
 A Second Level Header
 ---------------------
 
-Now is the time for all good men to come to
-the aid of their country. This is just a
-regular paragraph.
+So as the title explains, this is my first blog post with [Jekyll](http://jekyllrb.com/).
+My first impression so far is really good. This is an awesome tool for generating
+a blog, and it's really easy to deploy with [Github Pages](http://pages.github.com/).
+This is just my "Hello World!" post, so in a while I will create a post of how I
+set up Jekyll with Github Pages.
 
 ### Tags
-{% for tag in page.tags %}
-  <li>{{ tag }}</li>
-{% endfor %}
+<ul>
+  {% for tag in page.tags %}
+    <li>{{ tag }}</li>
+  {% endfor %}
+</ul>
 
 <a href="/">Back</a>
