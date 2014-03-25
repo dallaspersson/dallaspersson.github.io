@@ -1,16 +1,45 @@
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  margin: 0;
+}
+
 .container {
   width: 800px;
   margin: 0 auto;
 }
 
 header {
-  text-align: center;
+  background-color: #FB6065;
+  color: #ffffff;
+  height: 400px;
 }
+
+header h1 {
+  margin: 0;
+}
+
+header h1 span {
+  border: 4px solid;
+  padding: 0.2em;
+}
+
+header .title { padding-top: 200px; }
 
 .recent-posts {
   text-align: center;
 }
+
 .recent-posts ul {
   padding: 0;
   list-style: none;
 }
+
+/* Typography */
+.lead {
+  color: #666666;
+  font-size: 21px;
+}
+
+/* General */
+.text-center { text-align: center; }
