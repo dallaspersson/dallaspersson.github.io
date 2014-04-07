@@ -26,7 +26,8 @@ title: Blogging Like a Hacker
   <ul>
     {% for post in site.posts %}
       <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
+        <a class="post-title" href="{{ post.url }}">{{ post.title }}</a>
+        </br>
         <span> {{ post.date | date_to_long_string }}</span>
       </li>
     {% endfor %}
