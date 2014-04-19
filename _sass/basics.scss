@@ -18,3 +18,17 @@ a {
 a:hover {
   color: #3498db;
 }
+
+.badge {
+  display: inline-block;
+  vertical-align: baseline;
+  zoom: 1;
+  background: $purple;
+  border-radius: 2em;
+  color: white;
+  font-size: 0.75em;
+  font-weight: 600;
+  line-height: 1;
+  padding: .25em 1em;
+  text-align: center;
+}

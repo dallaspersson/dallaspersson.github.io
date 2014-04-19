@@ -22,13 +22,13 @@ title: Blogging Like a Hacker
 </section>
 
 <section class="recent-posts container">
-  <h2>Recent Blog Posts</h2>
+  <h2 class="text-center">Recent Blog Posts</h2>
   <ul>
     {% for post in site.posts %}
       <li>
-        <a class="post-title" href="{{ post.url }}">{{ post.title }}</a>
-        </br>
-        <span> {{ post.date | date_to_long_string }}</span>
+        <p class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></p>
+        <p class="published-date">Published {{ post.date | date_to_long_string }}</p>
+        <p>{{ post.excerpt }}</p>
       </li>
     {% endfor %}
   </ul>

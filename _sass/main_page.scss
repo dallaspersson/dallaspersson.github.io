@@ -16,7 +16,15 @@ header h1 span {
 header .title { padding-top: 200px; }
 
 .recent-posts {
-  text-align: center;
+
+  .post-title {
+    font-size: 2em;
+    margin-bottom: 0.2em;
+  }
+
+  .published-date {
+    margin-top: 0;
+  }
 }
 
 .recent-posts ul {
@@ -24,9 +32,6 @@ header .title { padding-top: 200px; }
   list-style: none;
 }
 
-.post-title {
-  font-size: 2em;
-}
 
 /* Typography */
 .lead {
