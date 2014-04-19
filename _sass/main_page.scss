@@ -1,0 +1,38 @@
+header {
+  background-color: $prime-color;
+  color: #ffffff;
+  height: 400px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header h1 span {
+  border: 4px solid;
+  padding: 0.2em;
+}
+
+header .title { padding-top: 200px; }
+
+.recent-posts {
+  text-align: center;
+}
+
+.recent-posts ul {
+  padding: 0;
+  list-style: none;
+}
+
+.post-title {
+  font-size: 2em;
+}
+
+/* Typography */
+.lead {
+  color: #666666;
+  font-size: 21px;
+}
+
+/* General */
+.text-center { text-align: center; }
