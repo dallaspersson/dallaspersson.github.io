@@ -2,7 +2,7 @@ body {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
   margin: 0;
-  color: #444444;
+  color: $text-color;
 }
 
 .container {
@@ -31,4 +31,24 @@ a:hover {
   line-height: 1;
   padding: .25em 1em;
   text-align: center;
+}
+
+.circular {
+  margin: 0 auto;
+  width: 240px;
+  height: 240px;
+  border-radius: 120px;
+  -webkit-border-radius: 120px;
+  -moz-border-radius: 120px;
+  background: url('../assets/images/me.png') no-repeat;
+  background-size: 240px !important;
+}
+
+
+@media
+(-webkit-min-device-pixel-ratio: 1.5),
+(min-resolution: 144dpi){
+  .circular {
+    background: url('../assets/images/me@2x.png') no-repeat;
+  }
 }

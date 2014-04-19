@@ -3,33 +3,41 @@ layout: default
 title: Blogging Like a Hacker
 ---
 
-<header>
+<!-- <header>
   <div class="container text-center">
     <section class="title">
       <h1><span>HELLO, I AM OSCAR</span></h1>
     <section>
   </div>
-</header>
+</header> -->
 
-<section class="container text-center">
-  <p class="lead" id="tag-line">
-    This is a blog. It's my attempt to make a small contribution to the cool
-    stuff that is floating around the internet. But for the most part this will
-    be where I put some of the things I learn or come across into writing just
-    to document. For this pre-phase I will most likely blog about how I improve
-    this site.
-  </p>
-</section>
+<div class=container>
+  <header>
+    <div class="circular"></div>
+  </header>
 
-<section class="recent-posts container">
-  <h2 class="text-center">Recent Blog Posts</h2>
-  <ul>
-    {% for post in site.posts %}
-      <li>
-        <p class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></p>
-        <p class="published-date">Published {{ post.date | date_to_long_string }}</p>
-        <p>{{ post.excerpt }}</p>
-      </li>
-    {% endfor %}
-  </ul>
-</section>
+  <section class="text-center">
+    <p class="lead" id="tag-line">
+      This is a blog. It's my attempt to make a small contribution to the cool
+      stuff that is floating around the internet. But for the most part this will
+      be where I put some of the things I learn or come across into writing just
+      to document. For this pre-phase I will most likely blog about how I improve
+      this site.
+    </p>
+  </section>
+
+  <hr>
+
+  <section class="recent-posts">
+    <h2 class="text-center">Recent Blog Posts</h2>
+    <ul>
+      {% for post in site.posts %}
+        <li>
+          <p class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></p>
+          <p class="published-date">Published {{ post.date | date_to_long_string }}</p>
+          <p>{{ post.excerpt }}</p>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+</div>

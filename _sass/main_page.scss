@@ -1,9 +1,12 @@
-header {
-  background-color: $prime-color;
-  color: #ffffff;
-  height: 400px;
-}
+// header {
+//   background-color: $prime-color;
+//   color: #ffffff;
+//   height: 400px;
+// }
 
+header {
+  margin: 50px 0 20px 0;
+}
 header h1 {
   margin: 0;
 }
@@ -35,7 +38,7 @@ header .title { padding-top: 200px; }
 
 /* Typography */
 .lead {
-  color: #666666;
+  color: #7f8c8d;
   font-size: 21px;
 }
 
