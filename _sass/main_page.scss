@@ -19,28 +19,25 @@ header h1 span {
 header .title { padding-top: 200px; }
 
 .recent-posts {
+  margin-bottom: 30px;
 
   .post-title {
-    font-size: 2em;
+    font-size: $x-large;
     margin-bottom: 0.2em;
   }
 
   .published-date {
     margin-top: 0;
   }
+
+  ul {
+    padding: 0;
+    list-style: none;
+  }
 }
 
-.recent-posts ul {
-  padding: 0;
-  list-style: none;
-}
-
-
-/* Typography */
 .lead {
-  color: #7f8c8d;
-  font-size: 21px;
+  color: $gray;
+  width: 300px;
+  margin: 0 auto;
 }
-
-/* General */
-.text-center { text-align: center; }

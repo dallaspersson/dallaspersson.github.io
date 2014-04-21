@@ -1,7 +1,27 @@
-// @font-face {
-//   font-family: 'Crimson';
-//   src: url('myfont.ttf') format('truetype');
-// }
+@font-face {
+  font-family: 'NewsCycle';
+  src: url('../assets/fonts/NewsCycle-Regular.ttf') format('truetype');
+}
+
+$serif: 'NewsCycle';
+
+$xx-large: 4em; // 4em = 40px
+$x-large: 2.6em; // 2.6em = 26px
+$large: 2em; // 2em = 20px
+$medium: 1.6em; // 1.6em = 16px
+$small: 1.2em; // 1em = 10px
+$x-small: 1em; // 0.8em = 8px
+
+h1 { font-size: $xx-large; }
+h2 { font-size: $x-large; }
+h3 { font-size: $large; }
+h4 { font-size: $medium; }
+h5 { font-size: $small; }
+h6 { font-size: $x-small; }
+
+.small { font-size: $small; }
+
+.faded { color: $gray; }
 
 .text-center {
   text-align: center;
