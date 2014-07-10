@@ -8,20 +8,19 @@ body {
 
 p {
   font-size: 1.6em; /* 1.6em = 16px */
-}
-
-.container {
-  width: 750px;
-  margin: 0 auto;
+  line-height: 1.6em;
 }
 
 a {
-  color: #444444;
-  text-decoration: none;
-}
+  color: $blue;
 
-a:hover {
-  color: #3498db;
+  &:hover {
+    color: $blue-darker;
+  }
+
+  &.is-title {
+    text-decoration: none;
+  }
 }
 
 .badge {

@@ -11,14 +11,14 @@ title: Blogging Like a Hacker
   </div>
 </header> -->
 
-<div class=container>
+<div class=l-container>
   <header>
     <div class="circular"></div>
   </header>
 
   <section class="lead text-center">
     <p>
-      I'm work and live in Malm&ouml; as a front-end web developer. I love music and techie stuff.
+      I work and live in Malm&ouml; as a front-end web developer. I love music and techie stuff.
     </p>
   </section>
 
@@ -29,9 +29,7 @@ title: Blogging Like a Hacker
     <ul>
       {% for post in site.posts %}
         <li>
-          <p class="post-title">
-            <a href="{{ post.url }}">{{ post.title }}</a>
-          </p>
+          <a class="post-title is-title" href="{{ post.url }}">{{ post.title }}</a>
           <p class="published-date faded small">Published {{ post.date | date_to_long_string }}</p>
           <p>{{ post.excerpt }}</p>
         </li>

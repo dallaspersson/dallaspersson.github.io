@@ -1,0 +1,45 @@
+.l-container {
+  width: 680px;
+  margin: 0 auto;
+}
+
+@media all and (max-width: 680px) {
+  body {
+    font-size: 80% !important;
+  }
+  .l-container {
+    width: 90%;
+  }
+}
+
+/* iPads in landscape */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+  body {
+    font-size: 80% !important;
+  }
+}
+
+/* iPads in portrait */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait)  {
+  body {
+    font-size: 100% !important;
+  }
+  .l-container {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-device-width: 600px) {
+  body {
+    font-size: 200% !important;
+  }
+  .l-container {
+    width: 95%;
+  }
+}
