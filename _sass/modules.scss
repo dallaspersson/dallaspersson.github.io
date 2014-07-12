@@ -1,5 +1,12 @@
 header {
-  margin: 50px 0 20px 0;
+  margin: 50px 0 30px 0;
+  .op-name {
+    margin-bottom: 0;
+    font-size: $xxx-large;
+  }
+  .op-lead {
+    margin-top: 0;
+  }
 }
 
 .lead {
