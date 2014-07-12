@@ -1,0 +1,41 @@
+header {
+  margin: 50px 0 20px 0;
+}
+
+.lead {
+  font-family: $sans, sans-serif;
+  color: $gray;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Style for list with recent posts */
+.recent-posts {
+  margin-bottom: 30px;
+
+  .post-title {
+    font-size: $x-large;
+    margin-bottom: 0.2em;
+  }
+
+  .post-date {
+    margin-top: 0;
+  }
+
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+}
+
+/* Style for induvidual post */
+.post {
+  h1 {
+    margin-bottom: 0.2em;
+  }
+}
+
+/* Smaller modules */
+.date {
+  color: $gray;
+}

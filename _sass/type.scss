@@ -1,6 +1,8 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Slab);
+// @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Slab);
+// @import url(http://fonts.googleapis.com/css?family=Lora|Open+Sans:400,800);
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700);
 
-$serif: 'Roboto Slab';
+$serif: 'Droid Serif';
 $sans: 'Open Sans';
 
 $xx-large: 4em; // 4em = 40px
@@ -18,7 +20,11 @@ h5 { font-size: $small; }
 h6 { font-size: $x-small; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $serif, serif;
+  font-family: $sans, sans-serif;
+}
+
+h4, h5, h6 {
+  font-weight: 400;
 }
 
 .small { font-size: $small; }
