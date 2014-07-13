@@ -1,10 +1,10 @@
 body {
-  // font-family: $sans, sans-serif;
   font-family: $serif, serif;
-  font-weight: 300;
   margin: 0;
+  padding: 0;
   color: $text-color;
   font-size: 62.5%; /* font-size 1em = 10px */
+  background-color: #ffffff;
 }
 
 p {
@@ -24,36 +24,17 @@ a {
   }
 }
 
-.badge {
-  display: inline-block;
-  vertical-align: baseline;
-  zoom: 1;
-  background: $purple;
-  border-radius: 2em;
-  color: white;
-  font-size: 0.75em;
-  font-weight: 600;
-  line-height: 1;
-  padding: .25em 1em;
-  text-align: center;
+h1 { font-size: $xx-large; }
+h2 { font-size: $x-large; }
+h3 { font-size: $large; }
+h4 { font-size: $medium; }
+h5 { font-size: $small; }
+h6 { font-size: $x-small; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $sans, sans-serif;
 }
 
-.circular {
-  margin: 0 auto;
-  width: 240px;
-  height: 240px;
-  border-radius: 120px;
-  -webkit-border-radius: 120px;
-  -moz-border-radius: 120px;
-  background: url('../assets/images/me.png') no-repeat;
-  background-size: 240px !important;
-}
-
-
-@media
-(-webkit-min-device-pixel-ratio: 1.5),
-(min-resolution: 144dpi){
-  .circular {
-    background: url('../assets/images/me@2x.png') no-repeat;
-  }
+h4, h5, h6 {
+  font-weight: 400;
 }

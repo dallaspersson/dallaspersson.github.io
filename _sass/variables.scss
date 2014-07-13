@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700);
+
 /* Colors */
 $red: #FB6065;
 $purple: #9b59b6;
@@ -9,3 +11,16 @@ $gray: #7f8c8d;
 
 $prime-color: $red;
 $text-color: #323232;
+
+/* Typography */
+$serif: 'Droid Serif';
+$sans: 'Open Sans';
+
+/* Font Sizes */
+$xxx-large: 6em; // 4em = 40px
+$xx-large: 4em; // 4em = 40px
+$x-large: 2.6em; // 2.6em = 26px
+$large: 2em; // 2em = 20px
+$medium: 1.6em; // 1.6em = 16px
+$small: 1.2em; // 1em = 10px
+$x-small: 1em; // 0.8em = 8px
