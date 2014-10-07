@@ -10,25 +10,17 @@ title: Oscar Persson
     <h4 class="op-lead faded">
       I work and live in Malm&ouml; as a front-end web developer. I love music and techie stuff.
     </h4>
-    <!-- <div class="circular"></div> -->
   </header>
-
-  <!-- <section class="lead text-center">
-    <p>
-      I work and live in Malm&ouml; as a front-end web developer. I love music and techie stuff.
-    </p>
-  </section> -->
 
   <hr>
 
   <section class="recent-posts">
-    <!-- <h3 class="text-center">Recent Blog Posts</h3> -->
     <ul>
       {% for post in site.posts %}
         <li>
           <a class="post-title is-title" href="{{ post.url }}">{{ post.title }}</a>
-          <p class="post-date date small">Published {{ post.date | date_to_long_string }}</p>
-          <p>{{ post.excerpt }}</p>
+          <p class="post-date date small">Written {{ post.date | date_to_long_string }}</p>
+          <!-- <p>{{ post.excerpt }}</p> -->
         </li>
       {% endfor %}
     </ul>

@@ -9,12 +9,8 @@
 
       <h2>{{ page.title }}</h2>
 
-      <!-- {% for tag in page.tags %}
-        <span class="badge">{{ tag }}</span>
-      {% endfor %} -->
-
       <p class="date">
-        Published {{ page.date | date_to_long_string }}
+        Written {{ page.date | date_to_long_string }}
       </p>
 
       {{ content }}
