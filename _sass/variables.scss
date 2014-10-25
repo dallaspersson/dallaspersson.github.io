@@ -1,7 +1,10 @@
-@import url(http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700);
+/* @import url(http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700); */
+/* @import url(http://fonts.googleapis.com/css?family=Roboto:100,700,400); */
+// @import url(http://fonts.googleapis.com/css?family=Lato:100,400,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto:500,700italic,300);
 
 /* Colors */
-$red: #FB6065;
+$red: #fa4b2a;
 $purple: #9b59b6;
 $blue: #3498db;
 $blue-darker: #2980b9;
@@ -10,11 +13,11 @@ $blue-darker: #2980b9;
 $gray: #7f8c8d;
 
 $prime-color: $red;
-$text-color: #323232;
+$text-color: #444444;
 
 /* Typography */
 $serif: 'Droid Serif';
-$sans: 'Open Sans';
+$sans: 'Lato';
 
 /* Font Sizes */
 $xxx-large: 6em; // 4em = 40px

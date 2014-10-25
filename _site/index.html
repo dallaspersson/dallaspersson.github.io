@@ -8,10 +8,7 @@
     <div class=l-container>
 
   <header>
-    <h1 class="op-name">Oscar Persson.</h1>
-    <h4 class="op-lead faded">
-      I work and live in Malm&ouml; as a front-end web developer. I love music and techie stuff.
-    </h4>
+    <p>My name is <strong>Oscar Persson</strong> and you're reading my blog. Happy <span id="todays-day"></span>!</p>
   </header>
 
   <hr>
@@ -21,7 +18,7 @@
       
         <li>
           <a class="post-title is-title" href="/2014/10/07/react-js.html">React.js</a>
-          <p class="post-date date small">Written 07 October 2014</p>
+          <p class="post-date date small">07 October 2014</p>
           <!-- <p><p>At first I was skeptical. The JSX files meant writing xml like syntax in your JavaScript and I thought it looked kind of weird. At the same time I read a blog post expressing the important to give something a try before declaring it stupid. Give it 5 minutes at least.</p>
 
 </p> -->
@@ -29,7 +26,7 @@
       
         <li>
           <a class="post-title is-title" href="/2014/04/20/use-web-fonts-for-icons.html">Use Web Fonts for Icons</a>
-          <p class="post-date date small">Written 20 April 2014</p>
+          <p class="post-date date small">20 April 2014</p>
           <!-- <p><p>Icons are used a lot in web applications. Most of the time I use icons from
 Glyphicons or Font Awesome. They have free sets of icons that you can use and
 Glyphicons Halflings are included with Bootstrap. These icons are wrapped as a
@@ -42,7 +39,7 @@ will not have to worry about different screen resolutions, such as retina displa
       
         <li>
           <a class="post-title is-title" href="/2014/03/18/first-blog-post-with-jekyll.html">First Blog Post with Jekyll</a>
-          <p class="post-date date small">Written 18 March 2014</p>
+          <p class="post-date date small">18 March 2014</p>
           <!-- <p><p>So as the title explains, this is my first blog post with <a href="http://jekyllrb.com/">Jekyll</a>.
 My first impression so far is really good. This is an awesome tool for generating
 a blog, and it's really easy to deploy with <a href="http://pages.github.com/">Github Pages</a>.
@@ -55,6 +52,35 @@ set up Jekyll with Github Pages.</p>
     </ul>
   </section>
 </div>
+
+<script type="text/javascript">
+  var day = '';
+
+  switch(new Date().getDay()) {
+    case 1:
+      day = 'Monday';
+      break;
+    case 2:
+      day = 'Tuesday';
+      break;
+    case 3:
+      day = 'Wednesday';
+      break;
+    case 4:
+      day = 'Thursday';
+      break;
+    case 5:
+      day = 'Friday';
+      break;
+    case 6:
+      day = 'Saturday';
+      break;
+    case 0:
+      day = 'Sunday';
+      break;
+  }
+  document.getElementById('todays-day').innerHTML = day;
+</script>
 
   </body>
 </html>

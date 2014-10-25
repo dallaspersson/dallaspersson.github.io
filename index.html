@@ -6,10 +6,7 @@ title: Oscar Persson
 <div class=l-container>
 
   <header>
-    <h1 class="op-name">Oscar Persson.</h1>
-    <h4 class="op-lead faded">
-      I work and live in Malm&ouml; as a front-end web developer. I love music and techie stuff.
-    </h4>
+    <p>My name is <strong>Oscar Persson</strong> and you're reading my blog. Happy <span id="todays-day"></span>!</p>
   </header>
 
   <hr>
@@ -19,10 +16,39 @@ title: Oscar Persson
       {% for post in site.posts %}
         <li>
           <a class="post-title is-title" href="{{ post.url }}">{{ post.title }}</a>
-          <p class="post-date date small">Written {{ post.date | date_to_long_string }}</p>
+          <p class="post-date date small">{{ post.date | date_to_long_string }}</p>
           <!-- <p>{{ post.excerpt }}</p> -->
         </li>
       {% endfor %}
     </ul>
   </section>
 </div>
+
+<script type="text/javascript">
+  var day = '';
+
+  switch(new Date().getDay()) {
+    case 1:
+      day = 'Monday';
+      break;
+    case 2:
+      day = 'Tuesday';
+      break;
+    case 3:
+      day = 'Wednesday';
+      break;
+    case 4:
+      day = 'Thursday';
+      break;
+    case 5:
+      day = 'Friday';
+      break;
+    case 6:
+      day = 'Saturday';
+      break;
+    case 0:
+      day = 'Sunday';
+      break;
+  }
+  document.getElementById('todays-day').innerHTML = day;
+</script>

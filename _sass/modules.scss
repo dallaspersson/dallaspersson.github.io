@@ -1,6 +1,10 @@
+header .light {
+  font-weight: 300;
+}
+
 .op-name {
   margin-bottom: 0;
-  font-size: $xxx-large;
+  font-size: $xx-large;
 }
 .op-lead {
   margin-top: 0;
@@ -13,6 +17,11 @@
   margin: 0 auto;
 }
 
+.is-title {
+  // font-style: italic;
+  font-weight: 700;
+}
+
 /* Style for list with recent posts */
 .recent-posts {
   margin-bottom: 30px;
@@ -20,6 +29,7 @@
   .post-title {
     font-size: $x-large;
     margin-bottom: 0.2em;
+    text-transform: uppercase;
   }
 
   .post-date {
@@ -36,6 +46,15 @@
 .post {
   h1 {
     margin-bottom: 0.2em;
+  }
+  .post-header {
+    #title {
+      margin-bottom: 0;
+    }
+    #sub-title {
+      margin-top: 0;
+      font-size: 1.2em;
+    }
   }
 }
 

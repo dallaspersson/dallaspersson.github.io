@@ -6,12 +6,12 @@
   </head>
   <body>
     <div class="l-container post">
-
-      <h2>{{ page.title }}</h2>
-
-      <p class="date">
-        Written {{ page.date | date_to_long_string }}
-      </p>
+      <section class="post-header">
+        <h2 id="title">{{ page.title }}</h2>
+        <p id="sub-title" class="date">
+          {{ page.date | date_to_long_string }}
+        </p>
+      </section>
 
       {{ content }}
 
