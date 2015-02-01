@@ -17,7 +17,7 @@ title: Oscar Persson
         <li>
           <a class="post-title is-title" href="{{ post.url }}">{{ post.title }}</a>
           <p class="post-date date small">{{ post.date | date_to_long_string }}</p>
-          <!-- <p>{{ post.excerpt }}</p> -->
+          <p>{{ post.excerpt }} <a class="small" href="{{ post.url }}">Keep reading..</a></p>
         </li>
       {% endfor %}
     </ul>
