@@ -16,3 +16,5 @@ JavaScript to calculate available space and such. There is not really that much
 to say. Here is the [Codepen](http://codepen.io/oscarpersson/full/PwaBNm/).
 
 ![My helpful screenshot]({{ site.url }}/assets/images/2015-03-01/screenshot.png)
+
+<a href="/">Back</a>
