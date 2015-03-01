@@ -6,8 +6,8 @@ tags: [javascript, css, codepen]
 
 Yesterday I saw this nice looking modal on [Soundcloud](https://soundcloud.com/)
 while changing my profile picture. It used a cubic bezier transition that gave it
-a cool bounce. I currently want to improve a modal used at work. So I tried to
-imitate the modal I saw on Soundcloud.
+a cool bounce. I currently want to improve a modal used at work. So inspired of
+this, I tried to imitate the modal I saw on Soundcloud.
 
 I thought that the easiest way was to do it using codepen. Since then, I can show
 this at work before implementing. This would probably be possible using only css,
