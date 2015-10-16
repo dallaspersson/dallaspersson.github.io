@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto:500,700italic,300);
+@import url(https://fonts.googleapis.com/css?family=Roboto:900,300|Droid+Serif);
 
 /* Colors */
 $red: #fa4b2a;
@@ -13,8 +13,8 @@ $prime-color: $red;
 $text-color: #444444;
 
 /* Typography */
-$serif: 'Droid Serif';
-$sans: 'Lato';
+$serif: 'Droid Serif', serif;
+$sans: 'Roboto', sans-serif;
 
 /* Font Sizes */
 $xxx-large: 3.75em; // 60px
