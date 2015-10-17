@@ -1,13 +1,37 @@
-.l-container {
-  width: 680px;
+.container {
+  max-width: 680px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
-@media all and (max-width: 680px) {
-  body {
-    font-size: 1.8em; /* 1.6em = 16px */
+header {
+  font-size: $small-font-size;
+  margin: $spacing-unit 0;
+}
+
+.post {
+  margin-bottom: $spacing-unit;
+
+  &.post-detail {
+    margin-top: $spacing-unit;
   }
-  .l-container {
-    width: 90%;
+
+  &__title {
+    font-size: 36px;
+    margin: 0;
+    a {
+      color: $text-color;
+    }
+  }
+
+  &__timestamp {
+    font-family: $sans;
+    margin-top: 0;
+    color: lighten($text-color, 30%);
+    font-size: $small-font-size;
+  }
+
+  &__keep-reading {
+    font-size: $small-font-size;
   }
 }
