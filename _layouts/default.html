@@ -4,8 +4,28 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ page.title }}</title>
+
+    <title>{{ site.blog_name }}</title>
+    <meta name="description" content="{{ site.description }}">
+    <meta name="author" content="{{ site.full_name}}" />
+
     <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- Twitter meta -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="{{ site.twitter_username }}">
+    <meta name="twitter:title" content="{{ site.blog_name }}">
+    <meta name="twitter:description" content="{{ site.description }}">
+    <meta name="twitter:creator" content="{{ site.twitter_username }}">
+
+    <!--Facebook meta-->
+    <meta property="og:image" content="{{ site.image }}"/>
+    <meta property="og:site_name" content="{{ site.blog_name}}"/>
+    <meta property="og:type" content="blog"/>
+    <meta property="og:description" content="{{ site.description }}" />
+    <meta property="og:title" content="{{ site.title }}"/>
+    <meta property="og:url" content="{{ site.url }}"/>
+
   </head>
   <body>
     {{ content }}
