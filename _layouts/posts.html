@@ -1,9 +1,31 @@
 <!DOCTYPE HTML>
 <html>
   <head>
-    <title>{{ page.title }}</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{ page.title }}</title>
+    <meta name="description" content="{{ site.description }}">
+    <meta name="author" content="{{ site.full_name}}" />
+
     <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- Twitter meta -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="{{ site.twitter_username }}">
+    <meta name="twitter:title" content="{{ page.title }}">
+    <meta name="twitter:description" content="{{ page.excerpt | strip_html }}">
+    <meta name="twitter:creator" content="{{ site.twitter_username }}">
+    <meta name="twitter:image" content="{{ site.square_image }}">
+
+    <!--Facebook meta-->
+    <meta property="og:image" content="{{ site.image }}"/>
+    <meta property="og:site_name" content="{{ site.blog_name}}"/>
+    <meta property="og:type" content="blog"/>
+    <meta property="og:description" content="{{ page.excerpt | strip_html }}" />
+    <meta property="og:title" content="{{ page.title }}"/>
+    <meta property="og:url" content="{{ site.url }}"/>
   </head>
   <body>
     <div class="container">
