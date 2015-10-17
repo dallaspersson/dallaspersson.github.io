@@ -3,7 +3,45 @@
 # only Main files contain this front matter, not partials.
 ---
 
-@import "variables";
+@charset "utf-8";
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:700,300|Droid+Serif);
+
+$base-font-size:   18px;
+$small-font-size:  $base-font-size * 0.8;
+$base-line-height: 1.56;
+
+$text-color:       #444444;
+$background-color: #FFFFFF;
+
+$red:              #fa4b2a;
+$gray:             #7f8c8d;
+
+/* Typography */
+$serif:            'Droid Serif', serif;
+$sans:             'Roboto', sans-serif;
+
+$spacing-unit:     30px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+
+
+// Using media queries with like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+
+
 @import "base";
 @import "layout";
-@import "modules";

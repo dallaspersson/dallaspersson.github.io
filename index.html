@@ -3,21 +3,22 @@ layout: default
 title: Oscar Persson
 ---
 
-<div class=l-container>
+<div class=container>
 
   <header>
     <p>My name is <strong>Oscar Persson</strong> and you're reading my blog. Happy <span id="todays-day"></span>!</p>
   </header>
 
-  <hr>
-
   <section class="recent-posts">
     <ul>
       {% for post in site.posts %}
-        <li>
-          <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-          <p class="post-date date small">{{ post.date | date_to_long_string }}</p>
-          <p>{{ post.excerpt }} <a class="small" href="{{ post.url }}">Keep reading..</a></p>
+        <li class="post">
+          <h2 class="post__title">
+            <a href="{{ post.url }}">{{ post.title }}</a>
+          </h2>
+          <p class="post__timestamp">{{ post.date | date_to_long_string }}</p>
+          {{ post.excerpt }}
+          <a class="post__keep-reading" href="{{ post.url }}">Keep reading..</a>
         </li>
       {% endfor %}
     </ul>
