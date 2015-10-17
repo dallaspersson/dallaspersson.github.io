@@ -2,4 +2,7 @@ safe: true
 lsi: false
 pygments: true
 markdown: kramdown
-exclude: [node_modules, Gruntfile.js, package.json, styles.scss]
+exclude: [node_modules, Gruntfile.js, package.json]
+sass:
+  sass_dir: _sass
+  style: compressed
