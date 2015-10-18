@@ -1,6 +1,6 @@
 ---
 layout: posts
-title: Slide down modal
+title: Slide-down Modal
 tags: [javascript, css, codepen]
 ---
 
