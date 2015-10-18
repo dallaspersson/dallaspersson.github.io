@@ -15,7 +15,7 @@ gem 'github-pages'
 ```
 
 ## Running Jekyll
-To run Jekyll in a way that matches the GitHub Pages build server, run Jekyll with Bundler. Use the command `bundle exec jekyll serve --watch` in the root of your repository (after switching to the gh-pages branch for project repositories), and your site should be available at [http://localhost:4000](http://localhost:4000). For a full list of Jekyll commands, see the [Jekyll documentation](http://jekyllrb.com/docs/usage/).
+To run Jekyll in a way that matches the GitHub Pages build server, run Jekyll with Bundler. Use the command `bundle exec jekyll serve --watch` in the root of your repository (after switching to the gh-pages branch for project repositories), and your site should be available at [http://localhost:4000](http://localhost:4000). To run Jekyll with drafts, then add the `--drafts` flag. For a full list of Jekyll commands, see the [Jekyll documentation](http://jekyllrb.com/docs/usage/).
 
 ## Keeping Jekyll up to date
 Jekyll is an active [open source project](https://github.com/jekyll/jekyll), and is updated frequently. As the GitHub Pages server is updated, the software on your computer may become out of date, resulting in your site appearing different locally from how it looks when published on GitHub. To keep Jekyll up to date, you can run the command `bundle update` (or if you opted out of step 2, run `gem update github-pages`).
