@@ -33,15 +33,13 @@
   <body>
     <div class="container">
       <div class="post">
+        <span class="faded small">
+          {{ page.date | date_to_long_string }}
+        </span>
         <h1 class="post__title">
           {{ page.title }}
         </h1>
-        <p class="post__timestamp">
-          {{ page.date | date_to_long_string }}
-        </p>
-
         {{ content }}
-
       </div>
     </div>
   </body>

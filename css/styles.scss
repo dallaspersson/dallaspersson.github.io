@@ -11,7 +11,7 @@ $base-font-size:   18px;
 $small-font-size:  $base-font-size * 0.8;
 $base-line-height: 1.56;
 
-$text-color:       #444444;
+$text-color:       #50585D;
 $background-color: #FFFFFF;
 
 $red:              #fa4b2a;
@@ -36,9 +36,18 @@ $on-laptop:        800px;
 //     }
 // }
 @mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+
+
+@mixin transition($transition...) {
+  -moz-transition:    $transition;
+  -o-transition:      $transition;
+  -webkit-transition: $transition;
+  transition:         $transition;
 }
 
 
