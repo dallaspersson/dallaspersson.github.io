@@ -11,6 +11,8 @@ font which means that they are vector based. So compared to bitmap images they
 scale to any size and still look pixel-perfect. And this also means that you
 will not have to worry about different screen resolutions, such as retina displays.
 
+<!--more-->
+
 At my job when I work in a development team and creating some sort of web
 application there is most often a person that handles the graphical things. This
 person might be a UX designer or a graphical designer that does the overall

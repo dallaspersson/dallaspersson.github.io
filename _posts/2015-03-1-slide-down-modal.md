@@ -8,6 +8,8 @@ Yesterday I saw this nice looking modal on [Soundcloud](https://soundcloud.com/)
 while changing my profile picture. It used a cubic bezier transition that gave it
 a cool bounce. So inspired of this, I tried to imitate the modal I saw on Soundcloud.
 
+<!--more-->
+
 I thought that the easiest way was to do it using codepen. Since then, I can show
 this at work before implementing. This would probably be possible using only css,
 but I need to support basic functionality for older browsers so I use some
