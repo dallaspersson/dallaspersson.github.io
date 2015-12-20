@@ -2,6 +2,7 @@ safe: true
 lsi: false
 pygments: true
 markdown: kramdown
+excerpt_separator: "<!--more-->"
 exclude: [node_modules, Gruntfile.js, package.json]
 sass:
   sass_dir: _sass
