@@ -1,6 +1,7 @@
 ---
 layout: posts
 title: CoffeeScript vs. ES2015
+image: /assets/images/2015-12-20/coffee.jpg
 ---
 
 ![Coffee]({{ site.url }}/assets/images/2015-12-20/coffee.jpg)
