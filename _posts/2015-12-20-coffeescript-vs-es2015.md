@@ -3,7 +3,7 @@ layout: posts
 title: CoffeeScript vs. ES2015
 ---
 
-![Coffee](http://localhost:4000/assets/images/2015-12-20/coffee.jpg)
+![Coffee]({{ site.url }}/assets/images/2015-12-20/coffee.jpg)
 
 For quite some time, CoffeeScript has been the first choice for many developers who didn't want to deal with the awkward Java-esque patina. But now with Babel, it is probably time to reconsider. Here follows a few bullets on why I think it is time to make the move to ES2015.
 
