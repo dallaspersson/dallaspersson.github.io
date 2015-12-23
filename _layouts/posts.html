@@ -28,7 +28,11 @@
     <meta name="twitter:creator" content="{{ site.twitter_username }}">
 
     <!--Facebook meta-->
+    {% if page.image %}
+    <meta property="og:image" content="{{ site.url }}{{ page.image }}">
+    {% else %}
     <meta property="og:image" content="{{ site.image }}"/>
+    {% endif %}
     <meta property="og:site_name" content="{{ site.blog_name}}"/>
     <meta property="og:type" content="blog"/>
     <meta property="og:description" content="{{ page.excerpt | strip_html }}" />
