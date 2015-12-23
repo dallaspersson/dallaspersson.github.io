@@ -6,23 +6,20 @@ title: Oscar Persson
 <div class=container>
 
   <header>
-    <p>{{ site.description }} Happy <span id="todays-day"></span>!</p>
+    Happy <span id="todays-day"></span>!
   </header>
 
-  <section class="recent-posts">
-    <ul>
-      {% for post in site.posts %}
-        <li class="post">
-          <h2 class="post__title">
-            <a href="{{ post.url }}">{{ post.title }}</a>
-          </h2>
-          <p class="post__timestamp">{{ post.date | date_to_long_string }}</p>
-          <p>{{ post.excerpt | strip_html }}</p>
-          <a class="post__keep-reading" href="{{ post.url }}">Keep reading..</a>
-        </li>
-      {% endfor %}
-    </ul>
-  </section>
+  <ul>
+    {% for post in site.posts %}
+      <li class="excerpt">
+        <span class="faded small">{{ post.date | date_to_string }}</span>
+        <h2 class="excerpt__title">
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </h2>
+        <p>{{ post.excerpt | strip_html }}</p>
+      </li>
+    {% endfor %}
+  </ul>
 </div>
 
 <script type="text/javascript">
