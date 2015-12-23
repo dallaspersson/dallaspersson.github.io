@@ -13,7 +13,7 @@
 }
 
 header {
-  font-size: $small-font-size;
+  text-align: center;
   margin: $spacing-unit 0;
 }
 
@@ -28,7 +28,7 @@ header {
       @include transition(color 80ms ease-in-out);
       color: $text-color;
       &:hover {
-        color: #22A7F0;
+        color: $red;
       }
     }
   }
@@ -39,5 +39,9 @@ header {
 
   img {
     margin: $spacing-unit/2 0;
+  }
+
+  &__header {
+    text-align: center;
   }
 }
