@@ -23,7 +23,6 @@ header {
 
   &__title {
     font-size: 30px;
-    margin: 0;
     a {
       @include transition(color 80ms ease-in-out);
       color: $text-color;
@@ -34,6 +33,7 @@ header {
   }
 }
 
+
 .post {
   margin: $spacing-unit 0;
 
@@ -41,7 +41,25 @@ header {
     margin: $spacing-unit/2 0;
   }
 
-  &__header {
-    text-align: center;
+  h2, h3, h4 {
+    color: $gray;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+}
+
+.post__header {
+  text-align: center;
+
+  h1 {
+    font-size: 36px;
+  }
+}
+
+.post__footer {
+  margin-top: $spacing-unit * 2;
+  text-align: center;
+  @include media-query($on-palm) {
+    text-align: left;
   }
 }

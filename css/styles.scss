@@ -5,17 +5,18 @@
 
 @charset "utf-8";
 
-@import url(https://fonts.googleapis.com/css?family=Roboto:700,300|Droid+Serif);
+@import url(https://fonts.googleapis.com/css?family=Roboto:700,400,300|Droid+Serif);
 
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.8;
+$large-font-size:  $base-font-size * 1.2;
 $base-line-height: 1.56;
 
-$text-color:       #50585D;
+$text-color:       rgba(0,0,0,.8);
 $background-color: #FFFFFF;
 
 $red:              #F62459;
-$gray:             #7f8c8d;
+$gray:             rgba(0,0,0,.44);
 
 /* Typography */
 $serif:            'Droid Serif', serif;

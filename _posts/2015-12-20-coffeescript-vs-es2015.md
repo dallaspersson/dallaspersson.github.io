@@ -10,14 +10,14 @@ For quite some time, CoffeeScript has been the first choice for many developers 
 
 <!--more-->
 
-### No consistent style
+## No consistent style
 CoffeeScript can be said to have a very expressive syntax, meaning that more can be written with less code. This can be extremely nice since it raises the speed of writing an app. However, compact code comes at the cost of readability for team members that are not as familiar with CoffeeScript. As an effect, CoffeeScript lacks consistent style of writing.
 
-### Easy to use ES2015
+## Easy to use ES2015
 ES2015 has become increasingly popular thanks to tools such as Babel and Webpack. It is now just as easy as using CoffeeScript. Thanks Babel!
 
-### Community
+## Community
 The community around ES2015 is big. That community is pumping out a lot of great developing tools around ES2015.
 
-### ES2015 is shiny and new
+## ES2015 is shiny and new
 It is fun being part of new technologies, and using them at work is a big motivator for many. Even in terms of recruitment this is a big plus. ES2015 with React sound a lot more exciting then Backbone/jQuery. Doesn't it?
