@@ -14,7 +14,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font-family: $serif;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
   font-size: $base-font-size;
   line-height: $base-line-height;
   font-weight: 300;
@@ -70,8 +70,8 @@ li {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-  font-family: $sans;
-  font-weight: 700;
+  font-family: Helvetica Neue, Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 500;
   line-height: $base-line-height * 0.8;
 }
 
