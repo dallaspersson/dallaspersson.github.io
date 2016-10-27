@@ -1,6 +1,17 @@
+.header {
+  font-size: $small-font-size;
+  padding: $spacing-unit/2;
+  margin: 0 auto $spacing-unit;
+
+  &__link {
+    float: right;
+  }
+}
+
 .container {
   max-width: 680px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0 10px;
 }
 
@@ -8,28 +19,18 @@
   color: lighten($text-color, 30%);
 }
 
-.small {
-  font-size: $small-font-size;
-}
-
 header {
   text-align: center;
   margin: $spacing-unit 0;
 }
 
-.excerpt {
-  text-align: center;
-  margin-bottom: $spacing-unit;
+.post-list {
+  &__header {
+    font-size: 24px;
+  }
 
-  &__title {
-    font-size: 30px;
-    a {
-      @include transition(color 80ms ease-in-out);
-      color: $text-color;
-      &:hover {
-        color: $red;
-      }
-    }
+  &__item {
+    margin-bottom: $spacing-unit/2;
   }
 }
 
@@ -42,17 +43,12 @@ header {
   }
 
   h2, h3, h4 {
-    color: $gray;
-    font-weight: 400;
-    margin-bottom: 0;
+    font-size: 18px;
+    margin-bottom: 0.25em;
   }
-}
 
-.post__header {
-  text-align: center;
-
-  h1 {
-    font-size: 36px;
+  &__header {
+    font-size: 24px;
   }
 }
 

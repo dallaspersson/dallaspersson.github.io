@@ -3,50 +3,14 @@ layout: default
 title: Oscar Persson
 ---
 
-<div class=container>
-
-  <header>
-    Happy <span id="todays-day"></span>!
-  </header>
-
+<div class='post-list container'>
+  <h1 class='post-list__header'>Blog archive</h1>
   <ul>
     {% for post in site.posts %}
-      <li class="excerpt">
-        <span class="faded small">{{ post.date | date_to_string }}</span>
-        <h2 class="excerpt__title">
-          <a href="{{ post.url }}">{{ post.title }}</a>
-        </h2>
-        <p>{{ post.excerpt | strip_html }}</p>
+      <li class='post-list__item'>
+        <span>{{ post.date | date_to_string }} - </span>
+        <a href='{{ post.url }}'>{{ post.title }}</a>
       </li>
     {% endfor %}
   </ul>
 </div>
-
-<script type="text/javascript">
-  var day = '';
-
-  switch(new Date().getDay()) {
-    case 1:
-      day = 'Monday';
-      break;
-    case 2:
-      day = 'Tuesday';
-      break;
-    case 3:
-      day = 'Wednesday';
-      break;
-    case 4:
-      day = 'Thursday';
-      break;
-    case 5:
-      day = 'Friday';
-      break;
-    case 6:
-      day = 'Saturday';
-      break;
-    case 0:
-      day = 'Sunday';
-      break;
-  }
-  document.getElementById('todays-day').innerHTML = day;
-</script>

@@ -40,20 +40,50 @@
     <meta property="og:url" content="{{ site.url }}{{ page.url }}"/>
   </head>
   <body>
+    <div class='header'>
+      <a class='header__link' href='/'>
+        {{ site.blog_name }}
+      </a>
+      Happy <span id="day"></span>!
+    </div>
     <div class="container">
       <div class="post">
-        <div class="post__header">
-          <span class="faded small">
-            {{ page.date | date_to_long_string }}
-          </span>
-          <h1 class="post__title">
-            {{ page.title }}
-          </h1>
-        </div>
+        <span class="faded small">
+          {{ page.date | date_to_long_string }}
+        </span>
+        <h1 class="post__header">
+          {{ page.title }}
+        </h1>
         {{ content }}
-        <div class='post__footer'>
-          <a href="/">Go back</a>
-        </div>
     </div>
+
+    <script type="text/javascript">
+      var day = '';
+
+      switch(new Date().getDay()) {
+        case 1:
+          day = 'Monday';
+          break;
+        case 2:
+          day = 'Tuesday';
+          break;
+        case 3:
+          day = 'Wednesday';
+          break;
+        case 4:
+          day = 'Thursday';
+          break;
+        case 5:
+          day = 'Friday';
+          break;
+        case 6:
+          day = 'Saturday';
+          break;
+        case 0:
+          day = 'Sunday';
+          break;
+      }
+      document.getElementById('day').innerHTML = day;
+    </script>
   </body>
 </html>

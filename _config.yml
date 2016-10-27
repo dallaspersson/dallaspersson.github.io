@@ -9,9 +9,9 @@ sass:
   style: compressed
 
 full_name: Oscar Persson
-blog_name: Blog | dallas.persson.github.io
-url: http://dallaspersson.github.io
-image: http://dallaspersson.github.io/assets/images/main.png
+blog_name: dallaspersson.github.io
+url: https://dallaspersson.github.io
+image: https://dallaspersson.github.io/assets/images/main.png
 square_image: http://dallaspersson.github.io/assets/images/main_square.png
 description: >
   Discover things about programming. I am a software engineer, and like the rest
