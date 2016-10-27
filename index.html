@@ -3,14 +3,13 @@ layout: default
 title: Oscar Persson
 ---
 
-<div class=container>
+<div class='post-list container'>
+  <h1 class='post-list__header'>Blog archive</h1>
   <ul>
     {% for post in site.posts %}
-      <li class="excerpt">
-        <span class="faded small">{{ post.date | date_to_string }}</span>
-        <h2 class="excerpt__title">
-          <a href="{{ post.url }}">{{ post.title }}</a>
-        </h2>
+      <li class='post-list__item'>
+        <span>{{ post.date | date_to_string }} - </span>
+        <a href='{{ post.url }}'>{{ post.title }}</a>
       </li>
     {% endfor %}
   </ul>
