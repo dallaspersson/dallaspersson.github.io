@@ -6,6 +6,7 @@ excerpt_separator: "<!--more-->"
 exclude: [node_modules, package.json]
 destination: public
 source: src
+collections: [projects]
 sass:
   sass_dir: _sass
   style: compressed

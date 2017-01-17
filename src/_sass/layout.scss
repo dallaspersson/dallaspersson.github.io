@@ -24,14 +24,21 @@ header {
   margin: $spacing-unit 0;
 }
 
-.post-list {
-  &__header {
-    font-size: 24px;
-  }
+.posts-section,
+.projects-section {
+  margin-bottom: $spacing-unit;
+}
 
-  &__item {
-    margin-bottom: $spacing-unit/2;
-  }
+.post-summary {
+  margin-bottom: $spacing-unit/2;
+}
+
+.project {
+  margin-bottom: $spacing-unit/2;
+}
+
+.project__actions {
+  font-size: 12px;
 }
 
 
@@ -40,15 +47,6 @@ header {
 
   img {
     margin: $spacing-unit/2 0;
-  }
-
-  h2, h3, h4 {
-    font-size: 18px;
-    margin-bottom: 0.25em;
-  }
-
-  &__header {
-    font-size: 24px;
   }
 }
 

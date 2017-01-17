@@ -3,14 +3,29 @@ layout: default
 title: Oscar Persson
 ---
 
-<div class='post-list container'>
+<section class='posts-section container'>
   <h1 class='post-list__header'>Blog archive</h1>
   <ul>
     {% for post in site.posts %}
-      <li class='post-list__item'>
+      <li class='post-summary'>
         <span>{{ post.date | date_to_string }} - </span>
         <a href='{{ post.url }}'>{{ post.title }}</a>
       </li>
     {% endfor %}
   </ul>
-</div>
+</section>
+
+<section class='projects-section container'>
+  <h1 class='post-list__header'>Projects</h1>
+  <ul>
+    {% for project in site.projects %}
+      <li class='project'>
+        <h2>{{ project.title }}</h2>
+        {{ project.content }}
+        <div class='project__actions'>
+          View code on <a href='{{ project.link }}'>Github</a>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
