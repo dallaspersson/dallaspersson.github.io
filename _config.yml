@@ -1,6 +1,6 @@
 safe: true
 lsi: false
-highlighter: pygments
+highlighter: rouge
 markdown: kramdown
 excerpt_separator: "<!--more-->"
 exclude: [node_modules, Gruntfile.js, package.json]
