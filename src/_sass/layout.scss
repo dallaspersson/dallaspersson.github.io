@@ -1,0 +1,73 @@
+.header {
+  font-size: $small-font-size;
+  padding: $spacing-unit/2;
+  margin: 0 auto $spacing-unit;
+
+  &__link {
+    float: right;
+  }
+}
+
+.container {
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+}
+
+.faded {
+  color: lighten($text-color, 30%);
+}
+
+header {
+  text-align: center;
+  margin: $spacing-unit 0;
+}
+
+.posts-section,
+.projects-section {
+  margin-bottom: $spacing-unit;
+}
+
+.posts-section {
+  @include small {
+    text-align: center;
+    .post__link {
+      display: block;
+    }
+  }
+
+  @include medium {
+    .post__date::after {
+      content: ' - ';
+    }
+  }
+}
+
+.projects-section {
+  @include small {
+    text-align: center;
+  }
+}
+
+.post {
+  margin-bottom: $spacing-unit/2;
+}
+
+.project {
+  margin-bottom: $spacing-unit/2;
+}
+
+.project__actions {
+  font-size: 12px;
+}
+
+
+.post-detail {
+  margin-top: $spacing-unit;
+  margin-bottom: $spacing-unit;
+
+  img {
+    margin: $spacing-unit/2 0;
+  }
+}

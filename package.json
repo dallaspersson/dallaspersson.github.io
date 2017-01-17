@@ -1,6 +1,14 @@
 {
   "name": "dallas-persson-blog",
   "version": "0.2.7",
+  "description": "",
+  "authors": [
+    {
+      "name": "Oscar Persson",
+      "email": "dallas.persson@gmail.com"
+    }
+  ],
+  "license": "MIT",
   "devDependencies": {
   }
 }
