@@ -29,6 +29,27 @@ header {
   margin-bottom: $spacing-unit;
 }
 
+.posts-section {
+  @include small {
+    text-align: center;
+    .post__link {
+      display: block;
+    }
+  }
+
+  @include medium {
+    .post__date::after {
+      content: ' - ';
+    }
+  }
+}
+
+.projects-section {
+  @include small {
+    text-align: center;
+  }
+}
+
 .post {
   margin-bottom: $spacing-unit/2;
 }
@@ -43,7 +64,8 @@ header {
 
 
 .post-detail {
-  margin: $spacing-unit 0;
+  margin-top: $spacing-unit;
+  margin-bottom: $spacing-unit;
 
   img {
     margin: $spacing-unit/2 0;

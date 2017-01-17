@@ -8,8 +8,8 @@ title: Oscar Persson
   <ul>
     {% for post in site.posts %}
       <li class='post'>
-        <span>{{ post.date | date_to_string }} - </span>
-        <a href='{{ post.url }}'>{{ post.title }}</a>
+        <span class='post__date'>{{ post.date | date_to_string }}</span>
+        <a class='post__link' href='{{ post.url }}'>{{ post.title }}</a>
       </li>
     {% endfor %}
   </ul>
