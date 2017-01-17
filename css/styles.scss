@@ -1,0 +1,47 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+@charset "utf-8";
+
+$base-font-size:   14px;
+$small-font-size:  $base-font-size * 0.8;
+$large-font-size:  $base-font-size * 1.2;
+$base-line-height: 1.56;
+
+$text-color:       rgba(0,0,0,.8);
+$background-color: #FFFFFF;
+
+$blue:              #22A7F0;
+$gray:             rgba(0,0,0,.44);
+
+$spacing-unit:     30px;
+
+$palm:          600px;
+$laptop:        800px;
+
+
+
+@mixin small {
+  @media (max-width: $palm - 1px) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media (min-width: $palm) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media (min-width: $laptop) {
+    @content;
+  }
+}
+
+
+
+@import "base";
+@import "layout";

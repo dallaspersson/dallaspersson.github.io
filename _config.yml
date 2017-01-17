@@ -4,11 +4,9 @@ highlighter: rouge
 markdown: kramdown
 excerpt_separator: "<!--more-->"
 exclude: [node_modules, package.json]
-destination: public
-source: src
 collections: [projects]
 sass:
-  sass_dir: src/_sass
+  sass_dir: _sass
   style: compressed
 
 full_name: Oscar Persson

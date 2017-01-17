@@ -3,4 +3,4 @@
 *.map
 Gemfile.lock
 node_modules/
-public/
+_site/
