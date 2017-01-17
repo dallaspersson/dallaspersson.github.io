@@ -8,7 +8,6 @@ destination: public
 source: src
 collections: [projects]
 sass:
-  sass_dir: _sass
   style: compressed
 
 full_name: Oscar Persson
