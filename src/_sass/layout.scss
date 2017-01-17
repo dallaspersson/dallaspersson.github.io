@@ -29,7 +29,7 @@ header {
   margin-bottom: $spacing-unit;
 }
 
-.post-summary {
+.post {
   margin-bottom: $spacing-unit/2;
 }
 
@@ -42,18 +42,10 @@ header {
 }
 
 
-.post {
+.post-detail {
   margin: $spacing-unit 0;
 
   img {
     margin: $spacing-unit/2 0;
-  }
-}
-
-.post__footer {
-  margin-top: $spacing-unit * 2;
-  text-align: center;
-  @include media-query($on-palm) {
-    text-align: left;
   }
 }
