@@ -12,7 +12,10 @@
   max-width: 680px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 10px;
+
+  @include small {
+    padding: 0 $spacing-unit/2;
+  }
 }
 
 .faded {
@@ -32,8 +35,14 @@ header {
 .posts-section {
   @include small {
     text-align: center;
+
     .post__link {
       display: block;
+    }
+
+    .post__date {
+      color: $gray;
+      font-size: $small-font-size;
     }
   }
 
