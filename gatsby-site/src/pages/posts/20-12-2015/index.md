@@ -1,5 +1,5 @@
 ---
-path: "/posts/coffeescript-vs-es2015"
+path: "/blog/coffeescript-vs-es2015"
 date: "2015-12-20"
 title: "CoffeeScript vs. ES2015"
 ---

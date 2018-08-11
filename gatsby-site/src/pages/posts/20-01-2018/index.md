@@ -1,5 +1,5 @@
 ---
-path: "/posts/css-in-js"
+path: "/blog/css-in-js"
 date: "2018-01-20"
 title: "CSS-in-JS"
 ---
