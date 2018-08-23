@@ -13,7 +13,7 @@ This blog is built using [Gatsby](https://www.gatsbyjs.org).
 1.  **Start developing.**
 
     ```sh
-    gatsby develop
+    npm run develop
     ```
 
 1.  **Open the source code and start editing!**
