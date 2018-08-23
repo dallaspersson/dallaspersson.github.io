@@ -11,6 +11,7 @@ const SecondPage = ({
     .map(edge => (
       <li key={edge.node.id}>
         <PostLink post={edge.node} />
+        <div>{edge.node.excerpt}</div>
       </li>
     ))
 

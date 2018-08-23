@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'dallaspersson.github.io',
+    title: 'dallaspersson',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -10,13 +10,14 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/pages/posts`,
-        name: 'markdown-pages',
+        name: 'markdown-posts',
       },
     },
     {
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: `gatsby-source-filesystem`,
       options: {
-        fonts: [`merriweather`, `open sans`],
+        path: `${__dirname}/src/pages/hacks`,
+        name: 'markdown-hacks',
       },
     },
   ],
